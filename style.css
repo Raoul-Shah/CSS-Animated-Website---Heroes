@@ -68,8 +68,6 @@ header .toggle.active {
     visibility: visible;
 }
 
-
-
 .navigation li {
     list-style: none;
 }
@@ -81,4 +79,42 @@ header .toggle.active {
     margin: 0 20px;
     font-weight: 600;
     display: inline-block;
+}
+
+.container {
+    position: absolute;
+    display: flex;
+    height: calc(100% - 200px);
+    width: calc(100% - 200px);
+    z-index: 11;
+}
+
+.container .box {
+    position: relative;
+    width: 25%;
+    height: 100%;
+    overflow: hidden;
+    border-right: 10px solid #fff;
+}
+
+.container .box:last-child {
+    border-right: none;
+}
+
+.container .box .imgBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.container .box .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
