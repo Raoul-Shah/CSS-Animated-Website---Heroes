@@ -268,6 +268,22 @@ header .toggle.active {
         border-bottom: 10px solid #fff;
     }
 
-    
+    .container .box:last-child {
+        border-right: 10px solid #fff;
+    }
+
+    .container .box .imgBx.active {
+        top: 70px;
+        left: 20px;
+        width: calc(100% - 40px);
+        height: calc(100% - 160px);
+    }
+
+    .footer {
+        width: 100%;
+        padding: 0 20px;
+        flex-direction: column;
+        justify-content: center;
+    }
 
 }
